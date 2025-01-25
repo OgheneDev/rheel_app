@@ -13,9 +13,7 @@ const Navbar = () => {
   };
 
   const scrollToSection = (sectionId) => {
-    console.log('Scrolling to:', sectionId); // Debugging
     const section = document.getElementById(sectionId);
-    console.log('Section:', section); // Check if the element is found
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
       setIsVisible(false); // Close menu

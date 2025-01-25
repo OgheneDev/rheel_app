@@ -3,6 +3,15 @@ import { Twitter, Facebook, Instagram } from 'lucide-react';
 import logo from '../assets/images/logo.png';
 
 const Footer = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.error(`Section with ID "${sectionId}" not found`);
+    }
+  };
+
   return (
     <footer className="bg-white text-[#797B89] py-12 px-6">
       <div className="container mx-auto max-w-6xl grid md:grid-cols-3 gap-8 items-center">
@@ -12,11 +21,11 @@ const Footer = () => {
         
         <div className="flex justify-center">
           <nav>
-            <ul className='flex items-center gap-5 text-[12px] text-[#1B1C20] font-medium'>
-              <li><a href="#" className="hover:text-[#FD6003] transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-[#FD6003] transition-colors">Why Us?</a></li>
-              <li><a href="#" className="hover:text-[#FD6003] transition-colors">Appointments</a></li>
-              <li><a href="#" className="hover:text-[#FD6003] transition-colors">Property Listing</a></li>
+            <ul className='flex items-center gap-3 text-[12px] text-[#1B1C20] font-medium'>
+              <li onClick={() => scrollToSection('features')}>Features</li>
+              <li onClick={() => scrollToSection('why-us')}>Why Us?</li>
+              <li onClick={() => scrollToSection('appointments')}>Appointments</li>
+              <li onClick={() => scrollToSection('property-listing')}>Property Listing</li>
             </ul>
           </nav>
         </div>
