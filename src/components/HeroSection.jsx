@@ -58,7 +58,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="image-container w-[450px]">
+      <div className="image-container md:w-[450px] w-[100%]">
         <img src={header} alt=""  />
       </div>
       
