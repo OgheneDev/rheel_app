@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  
+}
+
+.animate-scroll > div {
+  flex: 0 0 33.33%; /* Each item takes up 33.33% width, so 3 items will be visible */
+}
+
+
 
 body, input, select, button {
   font-family: "DM Sans", serif;
