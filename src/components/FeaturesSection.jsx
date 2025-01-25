@@ -23,7 +23,7 @@ const FeaturesSection = () => {
     ]
   return (
     <section className='py-[100px] px-5 text-[#1B1C20]'>
-      <h1 className='text-4xl font-bold mb-8 text-center '>Features for a better experience</h1>
+      <h1 className='text-3xl font-bold mb-8 text-center '>Features for a better experience</h1>
       <div className='flex flex-col px-[10px] gap-[50px]'> 
       {featuresData.map((feature, index) => (
         <div 
@@ -34,8 +34,8 @@ const FeaturesSection = () => {
            <img src={feature.icon} alt="" className='w-[70px]' />
          </div>
          <div className='text-center'>
-         <h2 className='text-3xl mb-3 '>{feature.title}</h2>
-         <p className='text-[#383A47] text-[18px]'>{feature.description}</p>
+         <h2 className='text-2xl mb-3 '>{feature.title}</h2>
+         <p className='text-[#383A47] text-[16px]'>{feature.description}</p>
          </div>
        </div>
       ))}
