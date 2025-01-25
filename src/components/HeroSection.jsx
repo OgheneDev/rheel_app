@@ -31,15 +31,15 @@ const HeroSection = () => {
           <button className="flex gap-2 items-center bg-[#121212] text-white px-4 py-2 rounded-lg flex-shrink-0">
             <img src={appleLogo} alt="Apple Logo" className="w-[30px] h-[30px]" />
             <div className="text-left">
-              <p className="text-[10px]">Download on the</p>
-              <h5 className="font-bold text-[12px]">Apple Store</h5>
+              <p className="text-[8px]">Download on the</p>
+              <h5 className="font-bold text-[10px]">Apple Store</h5>
             </div>
           </button>
           <button className="flex gap-2 items-center border border-[#121212] text-[#121212] px-4 py-2 rounded-lg flex-shrink-0">
             <img src={playstore} alt="Play Store Logo" className="w-[30px] h-[30px]" />
             <div className="text-left">
-              <p className="text-[10px]">Download on the</p>
-              <h5 className="font-bold text-[12px]">Play Store</h5>
+              <p className="text-[8px]">Download on the</p>
+              <h5 className="font-bold text-[10px]">Play Store</h5>
             </div>
           </button>
         </div>
@@ -60,26 +60,26 @@ const HeroSection = () => {
           <div className="flex gap-1">{renderStars(4)}</div>
         </div>
       </div>
-      <div className="absolute w-80 h-80 bottom-5 right-0 rounded-full bg-yellow-400 z-0"></div>
+      <div className="absolute w-80 h-80 bottom-5 right-5 rounded-full bg-yellow-400 z-0"></div>
       <div className="relative z-10">
-        <img src={hero} alt="Woman" className="w-full mx-auto h-[90vh]" />
+        <img src={hero} alt="Woman" className="w-[90%] mx-auto h-auto" />
       </div>
       <div className="absolute bottom-[190px] right-0 bg-gradient-to-r from-white to-pink-100 rounded-lg shadow-md p-4 max-w-xs z-10">
         <div className="flex">
-          <img src={jenny} alt="Jenny Wilson" className="w-10 h-10 rounded-full mr-2" />
+          <img src={jenny} alt="Jenny Wilson" className="w-[50px] h-[50px] rounded-full mr-2" />
           <div>
-          <span className="font-medium text-[14px] text-[#12141D]">Jenny Wilson</span>
-          <p className="text-[#383A47] text-[13px]">As an agent using reel has moved my business forward and helped reach larger audience</p>
+          <span className="font-medium text-[10px] text-[#12141D]">Jenny Wilson</span>
+          <p className="text-[#383A47] text-[9px]">As an agent using reel has moved my business forward and helped reach larger audience</p>
           </div>
         </div>
         
       </div>
-      <div className="absolute bottom-0 left-3 bg-gradient-to-r from-white to-pink-100 rounded-[20px] shadow-md p-4 max-w-xs z-10">
+      <div className="absolute bottom-15 left-3 bg-gradient-to-r from-white to-pink-100 rounded-[20px] shadow-md p-4 max-w-xs z-10">
         <div className="flex items-center">
           <img src={ronny} alt="Ronald Richards" className="w-[50px] h-[50px] rounded-full mr-2" />
           <div>
-          <span className="font-medium text-[14px] text-[#12141D]">Ronald Richards</span>
-          <p className="text-[#383A47] text-[13px]">One of the best real estate app I have ever used.</p>
+          <span className="font-medium text-[10px] text-[#12141D]">Ronald Richards</span>
+          <p className="text-[#383A47] text-[9px]">One of the best real estate app I have ever used.</p>
           </div>
         </div>
         
