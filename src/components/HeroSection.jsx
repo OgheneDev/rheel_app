@@ -3,7 +3,7 @@ import appleLogo from '../assets/images/apple-logo.svg';
 import playstore from '../assets/images/playstore.svg';
 import header from '../assets/images/header.png'
 import { Star } from 'lucide-react';
-import images from '../assets/images/images.png'
+import images from '../assets/images/Images.png'
 
 const HeroSection = () => {
   const renderStars = (rating = 4) => {
