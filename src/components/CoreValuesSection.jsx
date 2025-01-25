@@ -5,9 +5,9 @@ const CoreValuesSection = () => {
   return (
     <section className='py-8 bg-[#F8F8FA]'>
         <h2 className='text-2xl text-[#1B1C20] text-center font-bold mb-[30px]'>Core Values</h2>
-        <div className='flex flex-col gap-7 px-5'>
+        <div className='flex flex-col md:flex-row-reverse gap-7 px-5 md:px-[100px] md:py-8'>
             <div className="image-content">
-                <img src={frame} alt="" className='w-[90%] mx-auto' />
+                <img src={frame} alt="" className='w-[90%] mx-auto md:w-[500px] md:mx-0' />
             </div>
             <div className="text-content">
                 <div className='mb-7'>
