@@ -18,9 +18,9 @@ const KeyFeaturesSection = () => {
 
   return (
    <div>
-     <section className='bg-[#016A52] py-[50px] w-[95%] mx-auto mb-5'>
+     <section className="bg-[#016A52] bg-[url('/src/assets/images/Shapes.png')] bg-no-repeat py-[50px] w-[95%] md:w-full mx-auto mb-5 md:mb-8">
         <h2 className='font-bold text-white text-4xl mb-[50px] text-center'>Key Features</h2>
-        <div className='flex flex-col gap-[50px]'>
+        <div className='flex md:px-[100px] flex-col md:flex-row gap-[50px]'>
             {keyData.map((feature, index) => (
                 <div
                   key={index}
