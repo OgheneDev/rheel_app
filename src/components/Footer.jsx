@@ -21,7 +21,7 @@ const Footer = () => {
         
         <div className="flex justify-center">
           <nav>
-            <ul className='flex items-center gap-3 text-[12px] text-[#1B1C20] font-medium'>
+            <ul className='flex items-center gap-3 cursor-pointer text-[12px] text-[#1B1C20] font-medium'>
               <li onClick={() => scrollToSection('features')}>Features</li>
               <li onClick={() => scrollToSection('why-us')}>Why Us?</li>
               <li onClick={() => scrollToSection('appointments')}>Appointments</li>

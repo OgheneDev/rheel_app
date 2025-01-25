@@ -1,5 +1,4 @@
 import React from 'react'
-import phones from '../assets/images/phones.png'
 import desk from '../assets/images/image 1.png'
 
 const ChooseSection = ({id}) => {
@@ -7,7 +6,7 @@ const ChooseSection = ({id}) => {
     <div className=''>
       <section id={id} className='bg-[#F8F8FA] pb-5 w-[95%] md:py-[50px] md:w-full md:flex md:items-start md:px-[100px] md mx-auto'>
         <div className="image-cont">
-            <img src={phones} alt="" className='w-[90%] mx-auto mb-8 md:hidden' />
+            <img src={desk} alt="" className='w-[90%] mx-auto mb-8 md:hidden' />
             <img src={desk} alt="" className='md:block hidden' />
         </div>
       <div className="text-container text-center  md:text-start md:mt-12  md:w-[30%] px-5 md:px-0">
