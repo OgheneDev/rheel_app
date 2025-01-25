@@ -17,7 +17,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-full px-5 md:px-[100px] py-7 flex flex-col md:flex-row md:gap-[300px] gap-7">
+    <section className="relative w-full h-full px-5 md:px-[100px] py-7 pt-[100px] flex flex-col md:flex-row md:gap-[300px] gap-7">
       <div className="text-content z-10 md:w-[37%] relative">
         <h1 className="text-[#1B1C20] text-4xl font-bold mb-5">Buy, Sell and Lease without Hassle</h1>
         <p className="text-[#383A47] text-[18px] md:text-[13px] leading-[2rem] mb-5">

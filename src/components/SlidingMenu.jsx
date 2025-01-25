@@ -5,28 +5,22 @@ import appleLogo from '../assets/images/apple-logo.svg';
 import playstoreLogo from '../assets/images/playstore.svg';
 
 const SlidingMenu = ({ isVisible, toggleMenu, scrollToSection }) => {
-    const menuItems = [
-        { id: 'features', label: 'Features' }, // Matches <FeaturesSection id="features" />
-        { id: 'why-us', label: 'Why us?' }, // Matches <ChooseSection id="why-us" />
-        { id: 'appointments', label: 'Appointments' }, // Matches <AppointmentSection id="appointments" />
-        { id: 'property-listing', label: 'Property Listing' }, // Matches <ListingSection id="property-listing" />
-      ];
-      
-
+  const menuItems = [
+    { id: 'features', label: 'Features' },
+    { id: 'why-us', label: 'Why us?' },
+    { id: 'appointments', label: 'Appointments' },
+    { id: 'property-listing', label: 'Property Listing' },
+  ];
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full bg-[url('/src/assets/images/Shapes.png')] bg-no-repeat bg-left-top h-screen bg-[#016A52] z-50 transform transition-transform duration-300 overflow-y-auto ${
+      className={`fixed top-0 left-0 w-full h-screen bg-[url('/src/assets/images/Shapes.png')] bg-no-repeat bg-left-top bg-[#016A52] z-50 transform transition-transform duration-300 ${
         isVisible ? 'translate-x-0' : '-translate-x-full'
       }`}
     >
       <div className="p-5">
-        <div className='flex justify-between items-center mb-12'>
-          <X 
-            size={24} 
-            className='text-white cursor-pointer' 
-            onClick={toggleMenu} 
-          />
+        <div className="flex justify-between items-center mb-12">
+          <X size={24} className="text-white cursor-pointer" onClick={toggleMenu} />
           <img src={logo} alt="Logo" className="h-8" />
         </div>
 
@@ -43,8 +37,8 @@ const SlidingMenu = ({ isVisible, toggleMenu, scrollToSection }) => {
         </nav>
 
         <div className="flex flex-row gap-3">
-          <a 
-            href="#" 
+          <a
+            href="#"
             className="flex gap-2 items-center bg-[#121212] text-white px-4 py-2 rounded-lg flex-shrink-0"
           >
             <img src={appleLogo} alt="Apple Logo" className="w-[30px] h-[30px]" />
@@ -53,8 +47,8 @@ const SlidingMenu = ({ isVisible, toggleMenu, scrollToSection }) => {
               <h5 className="font-bold text-[10px]">App Store</h5>
             </div>
           </a>
-          <a 
-            href="#" 
+          <a
+            href="#"
             className="flex gap-2 items-center border border-white text-white px-4 py-2 rounded-lg flex-shrink-0"
           >
             <img src={playstoreLogo} alt="Play Store Logo" className="w-[30px] h-[30px]" />

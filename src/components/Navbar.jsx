@@ -23,14 +23,13 @@ const Navbar = () => {
       console.error(`Section with ID "${sectionId}" not found`);
     }
   };
-  
 
   return (
-    <nav className="flex justify-between items-center px-5 md:px-[100px] py-7">
+    <nav className="fixed top-0 left-0 w-full bg-white z-50 flex justify-between items-center px-5 md:px-[100px] py-7">
       <img src={logo} alt="Rheel Estate logo" className="md:w-[100px] w-[70px]" />
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-5 text-[12px] text-[#1B1C20]">
+      <ul className="hidden md:flex gap-5 text-[12px] cursor-pointer text-[#1B1C20]">
         <li onClick={() => scrollToSection('features')}>Features</li>
         <li onClick={() => scrollToSection('why-us')}>Why us?</li>
         <li onClick={() => scrollToSection('appointments')}>Appointments</li>
@@ -56,6 +55,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
 
 export default Navbar;
