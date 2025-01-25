@@ -60,13 +60,13 @@ const HeroSection = () => {
           <div className="flex gap-1">{renderStars(4)}</div>
         </div>
       </div>
-      <div className="absolute w-80 h-80 bottom-5 right-5 rounded-full bg-yellow-400 z-0"></div>
+      <div className="absolute w-80 h-70 bottom-10 right-5 rounded-full bg-yellow-400 z-0"></div>
       <div className="relative z-10">
         <img src={hero} alt="Woman" className="w-[90%] mx-auto h-auto" />
       </div>
-      <div className="absolute bottom-[190px] right-0 bg-gradient-to-r from-white to-pink-100 rounded-lg shadow-md p-4 max-w-xs z-10">
+      <div className="absolute bottom-[170px] right-0 bg-gradient-to-r from-white to-pink-100 rounded-lg shadow-md p-2 max-w-[250px] z-10">
         <div className="flex">
-          <img src={jenny} alt="Jenny Wilson" className="w-[50px] h-[50px] rounded-full mr-2" />
+          <img src={jenny} alt="Jenny Wilson" className="w-[40px] h-[40px] rounded-full mr-2" />
           <div>
           <span className="font-medium text-[10px] text-[#12141D]">Jenny Wilson</span>
           <p className="text-[#383A47] text-[9px]">As an agent using reel has moved my business forward and helped reach larger audience</p>
@@ -74,9 +74,9 @@ const HeroSection = () => {
         </div>
         
       </div>
-      <div className="absolute bottom-15 left-3 bg-gradient-to-r from-white to-pink-100 rounded-[20px] shadow-md p-4 max-w-xs z-10">
+      <div className="absolute bottom-15 left-3 bg-gradient-to-r from-white to-pink-100 rounded-lg shadow-md p-2 max-w-xs z-10">
         <div className="flex items-center">
-          <img src={ronny} alt="Ronald Richards" className="w-[50px] h-[50px] rounded-full mr-2" />
+          <img src={ronny} alt="Ronald Richards" className="w-[40px] h-[40px] rounded-full mr-2" />
           <div>
           <span className="font-medium text-[10px] text-[#12141D]">Ronald Richards</span>
           <p className="text-[#383A47] text-[9px]">One of the best real estate app I have ever used.</p>
