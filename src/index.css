@@ -19,7 +19,14 @@
   flex: 0 0 33.33%; /* Each item takes up 33.33% width, so 3 items will be visible */
 }
 
+.card-slider {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
 
+.card-slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 
 body, input, select, button {
   font-family: "DM Sans", serif;
