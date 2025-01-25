@@ -1,5 +1,5 @@
 import React from 'react'
-import card from '../assets/images/card.png'
+import card from '../assets/images/Card.png'
 import appleLogo from '../assets/images/apple-logo.svg'
 import playstore from '../assets/images/playstore.svg'
 
