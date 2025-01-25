@@ -4,11 +4,11 @@ import logo from '../assets/images/logo.png'
 
 const Footer = () => {
   return (
-    <footer className=" text-[#797B89] py-8">
+    <footer className=" text-[#797B89] py-8 px-5">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <img src={logo} alt="" className='w-[150px] mb-10' />
+        <img src={logo} alt="" className='w-[130px] mb-10' />
         <div>
-            <ul className='flex items-center justify-between mb-5 gap-3 text-[14px] text-[#1B1C20]'>
+            <ul className='flex items-center justify-between mb-8 gap-3 text-[12px] text-[#1B1C20]'>
                 <li>Features</li>
                 <li>Why us?</li>
                 <li>Appointments</li>
@@ -33,10 +33,10 @@ const Footer = () => {
         </div>
         <div className='h-[1px] w-[90%] mx-auto bg-[#D4D4D8] mt-7'></div>
         <div className="mt-7 md:mt-0">
-          <p className="text-[18px]">&copy;  Copyright 2025, All Rights Reserved.</p>
+          <p className="text-[15px] text-center">&copy;  Copyright 2025, All Rights Reserved.</p>
           <div className="mt-8">
-            <a href="#" className="text-[18px] mr-4">Privacy Policy</a>
-            <a href="#" className="text-[18px] ">Terms and Conditions</a>
+            <a href="#" className="text-[15px] mr-4">Privacy Policy</a>
+            <a href="#" className="text-[15px] ">Terms and Conditions</a>
           </div>
         </div>
       </div>

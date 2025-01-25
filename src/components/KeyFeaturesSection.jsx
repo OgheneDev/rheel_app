@@ -17,22 +17,24 @@ const KeyFeaturesSection = () => {
     ]
 
   return (
-    <section className='bg-[#016A52] py-[50px]'>
+   <div>
+     <section className='bg-[#016A52] py-[50px] w-[95%] mx-auto mb-5'>
         <h2 className='font-bold text-white text-4xl mb-[50px] text-center'>Key Features</h2>
         <div className='flex flex-col gap-[50px]'>
             {keyData.map((feature, index) => (
                 <div
                   key={index}
-                  className='bg-white flex flex-col justify-center items-center text-center w-[90%] mx-auto px-3 py-8 rounded-[20px]'
+                  className='bg-white flex flex-col justify-center items-center text-center w-[90%] mx-auto px-4 py-8 pb-5 rounded-[15px]'
                 >
                     <img src={feature.icon} alt="" className='mb-3' />
-                    <h3 className='mb-5 text-3xl font-bold text-[#FD6003]'>{feature.title}</h3>
-                    <p className='text-[#383A47] text-[18px]'>{feature.description}</p>
+                    <h3 className='mb-3 text-xl font-bold text-[#FD6003]'>{feature.title}</h3>
+                    <p className='text-[#383A47] text-[15px]'>{feature.description}</p>
                 </div>
             ))}
         </div>
 
     </section>
+   </div>
   )
 }
 

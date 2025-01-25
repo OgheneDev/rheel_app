@@ -23,19 +23,19 @@ const FeaturesSection = () => {
     ]
   return (
     <section className='py-[100px] px-5 text-[#1B1C20]'>
-      <h1 className='text-3xl font-bold mb-8 text-center '>Features for a better experience</h1>
-      <div className='flex flex-col px-[10px] gap-[50px]'> 
+      <h1 className='text-3xl font-bold mb-8 text-center md:mb-[80px]'>Features for a better experience</h1>
+      <div className='flex flex-col md:flex-row md:justify-between md:gap-0 md:px-[100px] px-[10px] gap-[50px]'> 
       {featuresData.map((feature, index) => (
         <div 
           key={index}
-          className='flex flex-col gap-5'
+          className='flex flex-col md:flex-row md:items-start md:w-[300px] gap-5'
           >
          <div className='flex justify-center'>
-           <img src={feature.icon} alt="" className='w-[70px]' />
+           <img src={feature.icon} alt="" className='w-[70px] md:w-[150px]' />
          </div>
-         <div className='text-center'>
-         <h2 className='text-2xl mb-3 '>{feature.title}</h2>
-         <p className='text-[#383A47] text-[16px]'>{feature.description}</p>
+         <div className='text-center md:text-start'>
+         <h2 className='text-2xl md:text-xl mb-3 md:mb-1 md:font-bold md:text-[15px] '>{feature.title}</h2>
+         <p className='text-[#383A47] md:text-[13px] text-[16px]'>{feature.description}</p>
          </div>
        </div>
       ))}
