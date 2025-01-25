@@ -12,12 +12,18 @@ const Navbar = () => {
     setIsVisible(!isVisible);
   };
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
+  const scrollToSection = (sectionId) => {
+    console.log('Scrolling to:', sectionId); // Debugging
+    const section = document.getElementById(sectionId);
+    console.log('Section:', section); // Check if the element is found
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setIsVisible(false); // Close menu
+    } else {
+      console.error(`Section with ID "${sectionId}" not found`);
     }
   };
+  
 
   return (
     <nav className="flex justify-between items-center px-5 md:px-[100px] py-7">
@@ -25,10 +31,10 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-5 text-[12px] text-[#1B1C20]">
-        <li>Features</li>
-        <li>Why us?</li>
-        <li>Appointment</li>
-        <li>Property listing</li>
+        <li onClick={() => scrollToSection('features')}>Features</li>
+        <li onClick={() => scrollToSection('why-us')}>Why us?</li>
+        <li onClick={() => scrollToSection('appointments')}>Appointments</li>
+        <li onClick={() => scrollToSection('property-listing')}>Property listing</li>
       </ul>
 
       <button className="hidden md:flex gap-5 text-[12px] bg-[#016A52] text-white rounded-sm p-3 py-[5px]">
@@ -40,9 +46,16 @@ const Navbar = () => {
       </button>
 
       <MenuIcon size="25" className="md:hidden" onClick={toggleMenu} />
-      {isVisible && <SlidingMenu isVisible={isVisible} toggleMenu={toggleMenu} scrollToSection={scrollToSection} />}
+      {isVisible && (
+        <SlidingMenu
+          isVisible={isVisible}
+          toggleMenu={toggleMenu}
+          scrollToSection={scrollToSection}
+        />
+      )}
     </nav>
   );
 };
+
 
 export default Navbar;

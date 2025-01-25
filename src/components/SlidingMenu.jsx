@@ -5,17 +5,14 @@ import appleLogo from '../assets/images/apple-logo.svg';
 import playstoreLogo from '../assets/images/playstore.svg';
 
 const SlidingMenu = ({ isVisible, toggleMenu, scrollToSection }) => {
-  const menuItems = [
-    { id: 'features', label: 'Features' },
-    { id: 'why-us', label: 'Why us?' },
-    { id: 'appointments', label: 'Appointments' },
-    { id: 'property-listing', label: 'Property Listing' },
-  ];
+    const menuItems = [
+        { id: 'features', label: 'Features' }, // Matches <FeaturesSection id="features" />
+        { id: 'why-us', label: 'Why us?' }, // Matches <ChooseSection id="why-us" />
+        { id: 'appointments', label: 'Appointments' }, // Matches <AppointmentSection id="appointments" />
+        { id: 'property-listing', label: 'Property Listing' }, // Matches <ListingSection id="property-listing" />
+      ];
+      
 
-  const handleMenuItemClick = (id) => {
-    scrollToSection(id);
-    toggleMenu();
-  };
 
   return (
     <div
@@ -38,7 +35,7 @@ const SlidingMenu = ({ isVisible, toggleMenu, scrollToSection }) => {
             <div
               key={id}
               className="cursor-pointer hover:text-gray-300 transition-colors"
-              onClick={() => handleMenuItemClick(id)}
+              onClick={() => scrollToSection(id)}
             >
               {label}
             </div>

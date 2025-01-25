@@ -3,7 +3,7 @@ import video from '../assets/images/video.png'
 import clock from '../assets/images/clock.png'
 import connect from '../assets/images/connect.png'
 
-const FeaturesSection = () => {
+const FeaturesSection = ({id}) => {
     const featuresData = [
         {
             icon: video,
@@ -22,7 +22,7 @@ const FeaturesSection = () => {
         }
     ]
   return (
-    <section className='py-[100px] px-5 text-[#1B1C20]'>
+    <section id={id} className='py-[100px] px-5 text-[#1B1C20]'>
       <h1 className='text-3xl font-bold mb-8 text-center md:mb-[80px]'>Features for a better experience</h1>
       <div className='flex flex-col md:flex-row md:justify-between md:gap-0 md:px-[100px] px-[10px] gap-[50px]'> 
       {featuresData.map((feature, index) => (

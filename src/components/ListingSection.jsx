@@ -1,10 +1,10 @@
 import React from 'react'
 import inbox from '../assets/images/Screenshot 2025-01-23 at 2.33.19 AM 111.png'
 
-const ListingSection = () => {
+const ListingSection = (id) => {
   return (
     <div>
-        <section className='bg-[#F8F8FA] py-[80px] md:flex pb-5 mb-7 md:py-[80px] md:mb-0 md:px-[100px] justify-between px-3 mx-auto w-[95%] md:w-full'> 
+        <section id={id} className='bg-[#F8F8FA] py-[80px] md:flex pb-5 mb-7 md:py-[80px] md:mb-0 md:px-[100px] justify-between px-3 mx-auto w-[95%] md:w-full'> 
         <div className="image-container">
             <img src={inbox} alt="" className='mx-auto md:w-[60%] mb-7 md:mb-0' />
         </div>

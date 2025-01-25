@@ -3,9 +3,9 @@ import card from '../assets/images/package.png'
 import appleLogo from '../assets/images/apple-logo.svg'
 import playstore from '../assets/images/playstore.svg'
 
-const AppointmentSection = () => {
+const AppointmentSection = ({id}) => {
   return (
-    <section className='py-[50px] md:flex flex-row-reverse md:gap-[100px] md:px-[100px]'>
+    <section id={id} className='py-[50px] md:flex flex-row-reverse md:gap-[100px] md:px-[100px]'>
         <div className="image-container">
             <img src={card} alt="" className='mx-auto w-[300px] md:w-[60%]' />
         </div>
