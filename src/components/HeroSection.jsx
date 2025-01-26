@@ -17,25 +17,25 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-full px-5 md:px-[100px] py-7 pt-[100px] flex flex-col md:flex-row md:gap-[300px] gap-7">
+    <section className="relative w-full h-full px-5 md:px-[120px] py-7 pt-[150px] flex flex-col md:flex-row md:gap-[20px] gap-7">
       <div className="text-content z-10 md:w-[37%] relative">
         <h1 className="text-[#1B1C20] text-4xl font-bold mb-5">Buy, Sell and Lease without Hassle</h1>
-        <p className="text-[#383A47] text-[18px] md:text-[13px] leading-[2rem] mb-5">
-          Our seamless gateway to properties in Abuja and Lagos. Explore Rheel App today for exclusive listings, trusted transactions, and unmatched convenience.
+        <p className="text-[#383A47] text-[18px] md:text-[15px] leading-[2rem] mb-5 md:mb-13">
+        Our seamless gateway to premium properties in Abuja. Explore Rheel App today for exclusive listings, trusted transactions, and unmatched convenience.
         </p>
-        <div className="flex flex-row gap-3 mb-5 md:mb-[100px]">
-          <button className="flex gap-2 items-center bg-[#121212] text-white px-4 py-2 rounded-lg flex-shrink-0">
+        <div className="flex r flex-row gap-3 mb-5 md:mb-[130px]">
+          <button className="flex gap-2 cursor-pointer items-center bg-[#121212] text-white px-4 py-2 rounded-lg flex-shrink-0">
             <img src={appleLogo} alt="Apple Logo" className="w-[30px] h-[30px]" />
             <div className="text-left">
-              <p className="text-[8px]">Download on the</p>
-              <h5 className="font-bold text-[10px]">Apple Store</h5>
+              <p className="text-[8px] md:text-[10px]">Download on the</p>
+              <h5 className="font-bold text-[10px] md:text-[12px]">Apple Store</h5>
             </div>
           </button>
-          <button className="flex gap-2 items-center border border-[#121212] text-[#121212] px-4 py-2 rounded-lg flex-shrink-0">
+          <button className="flex cursor-pointer gap-2 items-center border border-[#121212] text-[#121212] px-4 py-2 rounded-lg flex-shrink-0">
             <img src={playstore} alt="Play Store Logo" className="w-[30px] h-[30px]" />
             <div className="text-left">
-              <p className="text-[8px]">Download on the</p>
-              <h5 className="font-bold text-[10px]">Play Store</h5>
+              <p className="text-[8px] md:text-[10px]">Download on the</p>
+              <h5 className="font-bold text-[10px] md:text-[12px]">Play Store</h5>
             </div>
           </button>
         </div>
@@ -58,7 +58,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="image-container md:w-[450px] w-[100%]">
+      <div className="image-container md:w-[550px] w-[100%]">
         <img src={header} alt=""  />
       </div>
       

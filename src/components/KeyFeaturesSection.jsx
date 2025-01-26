@@ -78,8 +78,8 @@ const KeyFeaturesSection = () => {
 
   return (
    <div>
-     <section className="bg-[#016A52] bg-[url('/src/assets/images/Shapes.png')] md:px-[100px] px-2 bg-no-repeat py-[50px] w-[95%] md:w-full mx-auto mb-5 md:mb-8">
-        <h2 className='font-bold text-white text-4xl mb-[50px] text-center'>Key Features</h2>
+     <section className="bg-[#016A52] bg-[url('/src/assets/images/Shapes.png')] md:px-[120px] px-2 bg-no-repeat py-[50px] w-[95%] md:w-full mx-auto mb-5 md:mb-8">
+        <h2 className='font-bold text-white text-3xl mb-[50px] md:mb-[100px] text-center'>Key Features</h2>
         <div className="relative">
             {/* Previous Button */}
           <button 
@@ -93,13 +93,13 @@ const KeyFeaturesSection = () => {
           </button>
 
           <div 
-          className='card-slider flex overflow-x-auto snap-x snap-mandatory space-x-[20px]'
+          className='card-slider flex md:gap-[70px] overflow-x-auto snap-x snap-mandatory space-x-[20px]'
           ref={cardContainerRef}
           >
             {cardData.map((card, index) => (
                 <div
                   key={index}
-                  className='bg-white snap-center shrink-0 w-[90vw] md:w-[560px] flex flex-col justify-center items-center text-center  px-4 py-8 pb-5 rounded-[15px]'
+                  className='bg-white snap-center shrink-0 w-[90vw] md:w-[480px] flex flex-col justify-center items-center text-center  px-4 py-8 pb-5 rounded-[15px] md:rounded-[10px]'
                 >
                     <img src={card.icon} alt="" className='mb-3' />
                     <h3 className='mb-3 text-xl font-bold text-[#FD6003]'>{card.title}</h3>

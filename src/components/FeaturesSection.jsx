@@ -41,18 +41,18 @@ const FeaturesSection = ({ id }) => {
   ];
 
   return (
-    <section id={id} className="py-[100px] md:px-[100px] px-5 text-[#1B1C20]">
-      <h1 className="text-3xl font-bold mb-8 text-center md:mb-[80px]">
+    <section id={id} className="py-[100px] md:px-[120px] px-5 text-[#1B1C20]">
+      <h1 className="text-4xl font-bold mb-8 text-center md:mb-[80px]">
         Features for a better experience
       </h1>
       
       {/* Slider (desktop only) */}
-      <div className="relative overflow-hidden hidden md:block">
+      <div className="relative overflow-hidden pt-[50px] hidden md:block">
         <div className="flex flex-col md:flex-row gap-4 animate-scroll">
           {featuresData.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row md:items-start md:w-[100px] gap-5 transition-all duration-500 ease-in-out"
+              className="flex flex-col md:flex-row md:items-start px-10 gap-5 transition-all duration-500 ease-in-out"
             >
               <div className="flex justify-center">
                 <img

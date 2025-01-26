@@ -23,18 +23,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white z-50 flex justify-between items-center px-5 md:px-[100px] py-7">
+    <nav className="fixed top-0 left-0 w-full bg-white z-50 flex justify-between items-center px-5 md:px-[120px] py-7">
       <img src={logo} alt="Rheel Estate logo" className="md:w-[100px] w-[70px]" />
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-5 text-[12px] cursor-pointer text-[#1B1C20]">
+      <ul className="hidden md:flex gap-5 text-[14px] cursor-pointer text-[#1B1C20]">
         <li onClick={() => scrollToSection('features')}>Features</li>
         <li onClick={() => scrollToSection('why-us')}>Why us?</li>
         <li onClick={() => scrollToSection('appointments')}>Appointments</li>
         <li onClick={() => scrollToSection('property-listing')}>Property listing</li>
       </ul>
 
-      <button className="hidden md:flex gap-5 text-[12px] bg-[#016A52] text-white rounded-sm p-3 py-[5px]">
+      <button className="hidden cursor-pointer md:flex gap-5 text-[12px] bg-[#016A52] text-white rounded-sm p-3 py-[5px]">
         <div className="flex gap-2 items-center">
           <img src={frame} alt="" className="w-[20px] h-[20px]" />
           <img src={playstore} alt="" className="w-[10px] h-[10px]" />

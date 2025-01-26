@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white text-[#797B89] py-12 px-6">
+    <footer className="bg-white text-[#797B89] py-12 px-6 md:px-[120px]">
       <div className="container mx-auto max-w-6xl grid md:grid-cols-3 gap-8 items-center">
         <div className="flex flex-col items-center md:items-start">
           <img src={logo} alt="Company Logo" className='w-[150px] mb-4' />
@@ -21,7 +21,7 @@ const Footer = () => {
         
         <div className="flex justify-center">
           <nav>
-            <ul className='flex items-center gap-3 cursor-pointer text-[12px] text-[#1B1C20] font-medium'>
+            <ul className='flex items-center gap-3 cursor-pointer text-[12px] md:text-[12px] text-[#1B1C20] font-medium'>
               <li onClick={() => scrollToSection('features')}>Features</li>
               <li onClick={() => scrollToSection('why-us')}>Why Us?</li>
               <li onClick={() => scrollToSection('appointments')}>Appointments</li>
@@ -31,13 +31,13 @@ const Footer = () => {
         </div>
         
         <div className="flex space-x-6 justify-center md:justify-end">
-          <a href="#" className="text-[#FD6003] hover:opacity-80 transition-opacity">
+          <a href="https://x.com/rheel_estate" className="text-[#FD6003] hover:opacity-80 transition-opacity">
             <Twitter size={24} fill="#FD6003" />
           </a>
-          <a href="#" className="text-[#FD6003] hover:opacity-80 transition-opacity">
+          <a href="https://www.facebook.com/rheelestateabuja" className="text-[#FD6003] hover:opacity-80 transition-opacity">
             <Facebook size={24} fill="#FD6003" />
           </a>
-          <a href="#" className="text-[#FD6003] hover:opacity-80 transition-opacity">
+          <a href="https://www.instagram.com/rheel_estate" className="text-[#FD6003] hover:opacity-80 transition-opacity">
             <Instagram size={24} />
           </a>
           <a href="#" className="text-[#FD6003] hover:opacity-80 transition-opacity">
